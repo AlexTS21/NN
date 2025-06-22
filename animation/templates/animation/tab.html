@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slide Toggle Divs</title>
+  <style>
+    .container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+    }
+
+    .slide1 {
+      background-color: #ffd966;
+      z-index: 1;
+    }
+
+    .slide2 {
+      background-color: #6fa8dc;
+      transform: translateX(100%);
+      z-index: 2;
+    }
+
+    .container.active .slide1 {
+      transform: translateX(-100%);
+    }
+
+    .container.active .slide2 {
+      transform: translateX(0%);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" id="slider">
+    <div class="slide slide1">
+      <h3>First Div</h3>
+      <a>aqui</a>
+      <button onclick="l()">click</button>
+    </div>
+    <div class="slide slide2">
+      <h3>Second Div</h3>
+    </div>
+  </div>
+
+  <button onclick="toggleSlide()">Toggle Slide</button>
+
+  <script>
+    const slider = document.getElementById('slider');
+
+    function toggleSlide() {
+      slider.classList.toggle('active');
+    }
+    function l(){
+        console.log("aqui")
+    }
+  </script>
+
+</body>
+</html>

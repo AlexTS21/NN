@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Archivos de entorno y secretos
+*.env
+*.secret
+.env.*
+*.key
+*.pem
+
+# Archivos del sistema y editores
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Archivos generados
+staticfiles/
+media/
+node_modules/
+
+# Django
+db.sqlite3
+*.db
+*.sqlite
+
+# Archivos de migraciones compiladas (aunque las migraciones en sí sí se suben)
+*.pyc
