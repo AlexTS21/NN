@@ -1,0 +1,2 @@
+# NN
+Django NN project
