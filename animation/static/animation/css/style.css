@@ -177,6 +177,9 @@ body {
     padding-bottom: 10px;
     transition: all ease 0.3s;
 }
+#y-inp{
+    width: 60%;
+}
 
 .inp-xy:focus{
     outline: none;

@@ -206,7 +206,6 @@ function checkData(){
     const aprendizaje = document.getElementById('aprendizaje').value;
     const test  = document.getElementById('test').value;
     const iterations = document.getElementById('iterations').value;
-    const bach = document.getElementById('bach').value;
     if (csvColumns.length === 0) {
         showAlert("Please upload a CSV file first.", type="warning");
         return 1;
